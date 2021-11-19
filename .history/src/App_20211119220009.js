@@ -1,0 +1,16 @@
+import Topbar from './Components/topbar/Topbar';
+import './App.css';
+import AuthRoutes from './Auth/Routes';
+
+
+//functional programing
+function App() {
+  return (
+    <div></div>
+    <AuthRoutes/>,
+    <Topbar/>
+  
+  );
+}
+
+export default App;

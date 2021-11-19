@@ -1,0 +1,26 @@
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import Home from '../Components/Home/Home';
+import Profile from '../Components/Profile/Profile';
+
+function NavBarRoutes() {
+    return (
+        <div>
+            
+
+<Router>
+        <Routes>
+            <Route path="/home" exact component={Home}>
+            <Home/>
+          </Route>
+         
+           <Route path="/Profile" exact component={Profile}>
+            <Profile/>
+          </Route>
+        </Routes>
+    </Router>
+        </div>
+    )
+}
+
+export default NavBarRoutes
